@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+body header {
+  font-family: 'Noto Serif JP', serif;
+  width: 100%;
+  background-image: url("../img/ysobg.jpg");
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  border-bottom: 3px solid #494949;
+}
+
+body header .site-title {
+  margin: 0 auto;
+  margin-left: 150px;
+  margin-right: 30px;
+}
+
+body header .site-title .main-title {
+  display: flex;
+  margin-top: 12px;
+}
+
+body header .site-title .main-title h1 {
+  font-size: 4vw;
+  margin-top: 15px;
+}
+
+body header .site-title .main-title .site-logo {
+  width: 5vw;
+  height: 5vw;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+body header .site-title .sub-title {
+  font-size: 70%;
+}
+
+body header .site-title .sub-title h2 {
+  font-size: 2vw;
+}
+
+body header #sns-link {
+  display: flex;
+}
+
+body header .nav-link img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+body main {
+  font-family: 'Noto Serif JP', serif;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+body main .news {
+  width: 100%;
+  height: 25%;
+}
+
+body main .news h1 {
+  font-size: 2vw;
+  padding: 0.5em;
+  /*文字周りの余白*/
+  color: #494949;
+  background: #fffaf4;
+  border-left: solid 5px #346994;
+}
+
+body main .news p {
+  font-size: 2vw;
+}
+
+body main .concert {
+  margin-top: 40px;
+  margin: 0 auto;
+  border: 1px solid rgba(223, 212, 212, 0.7);
+}
+
+body main .concert .concert-title {
+  font-size: 2.5vw;
+  padding: 0.5em;
+  /*文字周りの余白*/
+  color: #494949;
+  /*文字色*/
+  background: #fffaf4;
+  /*背景色*/
+  border-left: solid 5px #346994;
+  /*左線（実線 太さ 色）*/
+}
+
+body main .concert .concert-info1 {
+  display: flex;
+}
+
+body main .concert .concert-info1 .concert-program {
+  padding-left: 80px;
+}
+
+body main .concert .concert-info1 .concert-program h1 {
+  font-size: 2.5vw;
+}
+
+body main .concert .concert-info1 .concert-program h2 {
+  font-size: 2.5vw;
+}
+
+body main .concert .concert-info1 .concert-program p {
+  font-size: 2vw;
+}
+
+body main .concert .concert-info1 .concert-img {
+  margin: auto;
+  padding-left: 200px;
+}
+
+body main .concert .concert-info2 {
+  display: flex;
+}
+
+body main .concert .concert-info2 .concert-schedule p {
+  font-size: 2vw;
+}
+
+body main .history h1 {
+  font-size: 2vw;
+  padding: 0.5em;
+  /*文字周りの余白*/
+  color: #494949;
+  /*文字色*/
+  background: #fffaf4;
+  /*背景色*/
+  border-left: solid 5px #346994;
+  /*左線（実線 太さ 色）*/
+}
+
+body main .history .purchase-link a {
+  margin-right: 50px;
+}
+
+body .sns {
+  border: 1px solid rgba(223, 212, 212, 0.7);
+}
+
+body .sns h1 {
+  font-size: 2vw;
+  padding: 0.5em;
+  /*文字周りの余白*/
+  color: #494949;
+  /*文字色*/
+  background: #fffaf4;
+  /*背景色*/
+  border-left: solid 5px #346994;
+  /*左線（実線 太さ 色）*/
+}
+
+body .sns .sns-plug {
+  display: flex;
+  justify-content: center;
+}
+
+body .sns .sns-plug .sns-box {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+body .sns .sns-plug .sns-box h2 {
+  font-size: 1.5vw;
+  width: 10vw;
+  height: 3vw;
+  margin-right: auto;
+  border-bottom: rgba(255, 255, 255, 0);
+}
+
+@media screen and (min-width: 990px) {
+  body .sns .sns-box {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  body .sns .sns-plug {
+    display: block;
+  }
+  body .sns .sns-plug .sns-box {
+    width: 320px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+}
+
+footer .footer-menu {
+  background-image: url("../img/ysobg.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+footer .footer-menu .js-scroll-fadein {
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+footer .footer-menu .js-scroll-fadein.is-fadein {
+  visibility: visible;
+  opacity: 1;
+}
+
+footer .footer-menu .arrow {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #346994;
+  border-radius: 30px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .footer-menu .arrow:hover {
+  opacity: .8;
+  bottom: 15px;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer .footer-menu .arrow:before, footer .footer-menu .arrow:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 14px;
+}
+
+footer .footer-menu .arrow:before {
+  top: 12px;
+}
+
+footer .footer-menu .arrow:after {
+  top: 21px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
